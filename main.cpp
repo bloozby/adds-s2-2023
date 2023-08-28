@@ -5,10 +5,10 @@ using namespace std;
 
 int main(){
     Finder f;
-    string find = "fil";
-    string in = "defile";
+    string in = "fil";
+    string find = "defile";
     cout << "find " << find << " in " << in << "?" << endl;
-    vector<int> found = f.findSubstrings(find, in);
+    vector<int> found = f.findSubstrings(in, find);
     for (int i = 0; i < found.size(); i++){
             cout << found[i];
     }
