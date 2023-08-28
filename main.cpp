@@ -1,26 +1,26 @@
-
-#include "Truckloads.h"
-#include "Reverser.h"
 #include <iostream>
+#include "finder.h"
 
 using namespace std;
 
 int main(){
-    /*Truckloads t;
-    int trucks = t.numTrucks(15, 1);
-    cout << "for a 15 crates with a load size of 1" << endl;
-    cout << "you will need " << trucks << " trucks." << endl;*/
-
-    Reverser r;
-    int value;
-    cout << "enter a value: ";
-    cin >> value;
-    int rev = r.reverseDigit(value);
-    cout << "reversed: " << rev << endl;
-    cout << "enter a word: ";
-    string word;
-    cin >> word;
-    cout << "reversed: " << r.reverseString(word) << endl;
-
+    Finder f;
+    string find = "file";
+    string in = "defile";
+    cout << "find " << find << " in " << in << "?" << endl;
+    vector<int> found = f.findSubstrings(find, in);
+    if (found[0] != -1)
+    {
+        cout << "yes" << endl;
+        for (int i = 0; i < found.size(); i++)
+        {
+            cout << found[i];
+        }
+        
+    } else {
+        cout << "no" << endl;
+    }
+    
+    
     return 0;
 }
