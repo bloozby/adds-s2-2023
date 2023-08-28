@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     Finder f;
     string in = "defile";
-    string find = "defile";
+    string find = "file";
     cout << "find " << find << " in " << in << "?" << endl;
     vector<int> found = f.findSubstrings(in, find);
     for (int i = 0; i < found.size(); i++){
