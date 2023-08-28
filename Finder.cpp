@@ -4,7 +4,10 @@ std::vector<int> Finder::findSubstrings(std::string s1, std::string s2) {
     std::vector<int> result;
     if (s1 == s2)
     {
-        result.push_back(1);
+        for (size_t i = 0; i < s2.size(); i++)
+        {
+            result.push_back(1);
+        }
         return result;
     }
     
