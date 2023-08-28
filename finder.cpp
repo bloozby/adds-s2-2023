@@ -9,7 +9,7 @@ vector<int> Finder::findSubstrings(string s1, string s2) {
         if (found != string::npos) {
             result.push_back(found);
         } else {
-            result.push_back(-1);
+            return result.push_back(-1);
         }
     }
     return result;
