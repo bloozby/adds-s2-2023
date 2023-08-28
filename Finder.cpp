@@ -2,12 +2,11 @@
 
 std::vector<int> Finder::findSubstrings(std::string s1, std::string s2) {
     std::vector<int> result;
-    /*std::vector<int> equal;
     if (s1 == s2)
     {
-
-        return ;
-    }*/
+        result.push_back(1);
+        return result;
+    }
     
 
     for(size_t i = 1; i <= s2.size(); i++) {
