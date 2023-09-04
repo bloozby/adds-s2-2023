@@ -7,8 +7,8 @@ class Sort
 private:
     /* data */
 public:
-    Sort();
-    virtual std::vector<int> sort(std::vector<int> list);
+    Sort(){};
+    virtual std::vector<int> sort(std::vector<int> list){};
 };
 
 
