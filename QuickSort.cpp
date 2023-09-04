@@ -54,19 +54,3 @@ std::vector<int> QuickSort::getList(){
 void QuickSort::setList(std::vector<int> list){
     storage = list;
 }
-
-/*std::vector <int> QuickSort::sort(std::vector<int> list){
-    
-
-    // pivot and seperate into two parts
-    
-
-    //recursively call sorting
-
-    //left part
-
-    //right part
-    
-
-    return list;
-}*/

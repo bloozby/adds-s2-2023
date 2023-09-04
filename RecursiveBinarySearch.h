@@ -7,7 +7,7 @@ private:
     int binarySearch(std::vector<int> array, int start, int end, int target);
     int index;
 public:
-    RecursiveBinarySearch();// no argument constractor
+    RecursiveBinarySearch();
     bool search(std::vector<int> array, int target);
     int getindex();
 };

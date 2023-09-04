@@ -7,8 +7,8 @@ class QuickSort : public Sort {
 private:
 std::vector<int> storage;
 public:
-    QuickSort();// no argument constractor
-    QuickSort(std::vector<int> array); // one argument constractor
+    QuickSort();
+    QuickSort(std::vector<int> array);
 
     int partition (int start, int end);
     void quickSort(int start, int end);
