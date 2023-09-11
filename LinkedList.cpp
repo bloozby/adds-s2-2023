@@ -78,12 +78,11 @@ void LinkedList::printList(){
     Node* currNode = head;
     std::cout << "[";
     while (currNode != nullptr){
-        if (currNode->link=nullptr)
-        {
-            std::cout << currNode->data << "]";
-            currNode = currNode->link;
-        } else {
+        if (currNode->link != nullptr){
             std::cout << currNode->data << " ";
+            currNode = currNode->link;
+        } else{
+            std::cout << currNode->data << "]";
             currNode = currNode->link;
         }
     }
