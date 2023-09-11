@@ -76,11 +76,17 @@ int LinkedList::search(int target){
 
 void LinkedList::printList(){
     Node* currNode = head;
+    std::cout << "[";
     while (currNode != nullptr){
-        std::cout << currNode->data << std::endl;
-        currNode = currNode->link;
+        if (currNode->link=nullptr)
+        {
+            std::cout << currNode->data << "]";
+            currNode = currNode->link;
+        } else {
+            std::cout << currNode->data << " ";
+            currNode = currNode->link;
+        }
     }
-    std::cout << std::endl;
 }
 
 Node* LinkedList::traverse(int index){
